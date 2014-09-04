@@ -19,9 +19,10 @@
        on how to target different products -->
 
   <depends>com.intellij.modules.lang</depends>
+  <depends>com.jetbrains.php</depends>
 
   <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
+      <predefinedCodeStyle implementation="uk.org.throup.jetbrains.moodle.MoodlePhpPredefinedCodeStyle"/>
   </extensions>
 
   <application-components>

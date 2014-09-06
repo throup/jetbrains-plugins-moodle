@@ -4,7 +4,11 @@
     <property name="idea.lib" value="${idea.dir}/lib"/>
     <property name="idea.plugins" value="${idea.dir}/plugins"/>
 
-    <path id="javac2.classpath"/>
+    <path id="javac2.classpath">
+        <pathelement location="${idea.lib}/javac2.jar"/>
+        <pathelement location="${idea.lib}/asm-all.jar"/>
+    </path>
+
     <taskdef name="javac2" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
 
 

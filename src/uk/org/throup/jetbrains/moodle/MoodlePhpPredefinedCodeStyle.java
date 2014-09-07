@@ -15,7 +15,12 @@ public class MoodlePhpPredefinedCodeStyle extends PredefinedCodeStyle {
     @Override
     public void apply(CodeStyleSettings codeStyleSettings) {
         CommonCodeStyleSettings commonSettings = codeStyleSettings.getCommonSettings(getLanguage());
-        commonSettings.RIGHT_MARGIN                                     = -1;
+
+        // Explicit settings from the Moodle coding style.
+        // https://docs.moodle.org/dev/Coding_style
+        commonSettings.RIGHT_MARGIN                                     = 132;
+
+        // Unsorted.
         commonSettings.LINE_COMMENT_AT_FIRST_COLUMN                     = true;
         commonSettings.BLOCK_COMMENT_AT_FIRST_COLUMN                    = true;
         commonSettings.KEEP_LINE_BREAKS                                 = true;
